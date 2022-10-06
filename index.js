@@ -32,7 +32,8 @@ app.use(express.json());
 app.use(logger);
 app.use(cors('*'));
 
-const PORT = 3001;
+// eslint-disable-next-line no-undef
+const PORT = process.env.PORT || 3001;
 
 app.get('/', (request, response) => {
 	
